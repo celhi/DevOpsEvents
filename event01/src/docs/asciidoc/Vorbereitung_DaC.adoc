@@ -1,0 +1,172 @@
+= Docs as Code 
+An Overview
+Christine Lenhart <Christine.Lenhart@gft.com>
+:toc: left
+
+
+== Was möchte ich eigentlich erklären?
+
+* Was verbirgt sich hinter dem Begriff Docs as Code?
+* Was für einen Nutzen habe ich davon?
+* Und was hat das alles nun mit DevOps zu tun?
+
+
+== Was verbirgt sich hinter Docs as Code?
+
+Der Begriff Docs-as-Code oder Docs-like-Code (vgl. Anne Gentle) kam zum ersten Mal im Zusammenhang mit <??> auf.
+Die Idee ist es sich auf den eigentlichen Inhalt eines Schriftstücks zu konzentrieren und 
+sich nicht von nervigen Formatierungen aus dem Schreibfluss bringen zu lassen.
+Gerade bei Entwicklern ist der Drang zum Dokumentieren eher wenig verbreitet.
+Da liegt es Nahe, 
+es all denjenigen schmackhafter zu machen, 
+die von der Nutzung "umständlicher Schreibhilfen" (Richtext-Editoren wie Word, Wikis, Confluence etc.) "genervt" sind.
+Ein einfacher Texteditor soll nach Möglichkeit ausreichen,
+Dokumentation anzufertigen.
+Um die Formatierung soll sich ein anderer kümmern.
+
+Was ist also wenn man Dokumentation auch in Form von Code erstellen könnte?
+Das ist die Fragestellung die sich <XY> gestellt hatte, als er mit der Entwicklung von ASCIIDOC begann.
+
+Dokumentation insbesondere Architekturdokumentation – genauso behandeln wie Ihren Code: schreiben, bauen, testen, committen, mergen. 
+
+Note: Ich möchte mich hier auf ASCIIDOC(TOR) und derivate davon beschränken. Es gibt weitaus mehr <Markup Sprachen>, 
+aber ASCIIDOC bietet viele Vorteile.
+Erst mit einer echten Leerzeile beginnt ein neuer Abschnitt.
+D.h. man kann seinen Text so aufbauen, dass pro Zeile genau ein Satz steht (oder Halbsatz).
+(Einige empfehlen, den Ansatz von 1 Satz pro Zeile, zur Verbesserung der Lesbarkeit bei E-Mails zu nutzen.)
+
+
+
+
+
+=== Vorteile
+Das Interessante dabei ist auch, dass sich Dokumente und Bilder/Diagramme kreuzverweisen lassen. So bleiben diese in Dokumenten Up-to-date.
+
+
+
+=== Was hat das alles nun mit DevOps zu tun?
+Anne Gentle fasst das im Buchtitel gut zusammen: DOCS LIKE CODE - Write, review, test, merge, build, deploy, repeat.
+Moment.
+Das kommt mir doch irgendwie bekannt vor. 
+Genau, das entspricht doch dem Konzept von CI/CD.
+Man schreibt etwas, sei es Code, ein Dokument, ...
+Gibt es in Review
+Führt automatisierte Tests durch - funktioniert mein Code?
+Wenn die Tests (der Build) erfolgreich durchgelaufen ist,
+dann darf gemerged werden (Git)
+Es wird ein oder mehrere Builds getriggert
+die Artefakte deployed (an verschiedene Stellen, in verschiedenen Formaten, Confluence, PDF, ...)
+
+Und dann wieder holt sich alles. :)
+
+
+
+Aufteilung in mehere Dokumente --> Modularisierung
+include::path[attributes].
+
+
+
+Diagramme? -> plantuml
+Eher bei sequenzdiagrammen, da kein/kaum Einfluss auf Anordnung
+Besser auf graphiken/diagramme verweisen
+
+
+Tools
+AsciiDoc Plug-ins für IntelliJ, Atom oder VS Code  (Eclipse hat ein vergleichbar schlechtes Plugin) --> WYSIWYG fashion side-by-side (pre)view
+
+
+---
+
+Markdown (.md) = vereinfachte Auszeichnungssprache
+verschiedene Dialekte und Erweiterungen
+
+plain text formatting syntax
+
+
+==== Conditionals
+* Nice introduction can be found here: http://mrhaki.blogspot.com/2014/08/awesome-asciidoc-using-conditional.html)
+
+* How to pass arguments (http://discuss.asciidoctor.org/Conditional-inclusion-td2568.html)
+** That's the place you need to be. Conditional preprocessor directives are controlled using document-level attributes. For example, you might do something like:
+```
+ifdef::audience-a[]
+Hi audience A!
+endif::[]
+ifdef::audience-b[]
+Hi audience B!
+endif::[]
+```
+Then you'd enable the audience using a commandline attribute:
+
+ `$ asciidoctor -a audience-a document.adoc`
+x
+There are several other ways to structure the logic. For instance, you can use ifeval if you want to check the value of the attribute:
+
+```
+ifeval::["{audience}" == "A"]
+Hi audience A!
+endif::[]
+```
+
+And pass:
+
+  `$ asciidoctor -a audience=A document.adoc`
+
+---
+
+---
+
+AsciiDoctorJ : https://asciidoctor.org/docs/asciidoctorj/
+
+---
+
+---
+Docker image: https://hub.docker.com/r/asciidoctor/docker-asciidoctor/
+Run: docker run -it -v <your directory>:/documents/ asciidoctor/docker-asciidoctor
+
+
+
+Check out confluence
+---
+
+---
+Quellen
+
+Links to relative files (Auszug aus AsciiDoc manual)
+If you want to link to an external file relative to the current document, use the link macro in front of the file name.
+
+link:protocol.json[Open the JSON file]
+If your file is an HTML file, you can link directly to a section in the document, append a hash (#) followed by the section’s ID to the end of the file name.
+
+link:external.html#livereload[LiveReload]
+For links to relative AsciiDoc documents cross references should be used.
+
+---
+ 
+---
+sciiDoc-Dokumente lassen sich sehr einfach in viele unterschiedliche Ausgabeformate umwandeln. Am Beispiel HTML5 haben Sie das in Folge eins und zwei der Kolumne schon gesehen. [https://jaxenter.de/docs-as-code-65644]
+
+ Das oft verwendete Confluence von Atlassian speichert seine Seiten beispielsweise in einem XHTML-Dialekt und verfügt über ein REST-API. Das Open-Source-Projekt docToolchain [5] hat dies als Gradle-Task implementiert, wobei das generierte HTML-Dokument entsprechend der Überschriftenebenen in Seiten und Unterseiten zerlegt wird, um so eine einem Wiki entsprechende Strukturierung zu erreichen (Abb. 2).
+[https://jaxenter.de/docs-as-code-asciidoctor-62432]
+
+---
+
+---
+
+Quellen: https://jaxenter.de/docs-as-code-65644
+https://jaxenter.de/hitchhikers-guide-docs-code-build-magie-71454
+https://jaxenter.de/docs-as-code-asciidoctor-62432
+
+
+Anne Gentle: DOCS LIKE CODE - Write, review, test, merge, build, deploy, repeat. 
+By Anne Gentle 
+
+---
+
+
+---
+RUN ASCIIDOCTOR: 
+html: asciidoctor mysample.adoc
+docbook: asciidoctor -b docbook mysample.adoc
+PDF:????
+---

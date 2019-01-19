@@ -1,0 +1,102 @@
+= Docs as Code
+
+An Overview
+
+Christine Lenhart <Christine.Lenhart@gft.com>
+
+DevOps Event 24.01.2019
+
+:toc: left
+
+TODO: conditional for presentation and handbook
+
+== What is Docs as Code?
+
+TODO
+
+
+== What does it have to do with DevOps?
+
+Anne Gentle gives a nice answer to that
+
+```
+Docs like code :=
+
+* write 
+* review 
+* test 
+* merge 
+* build 
+* deploy 
+
+repeat
+```
+
+=== Sounds familiar?
+* Right, just like the concept of DevOps and CI/CD
+* You *write* code eh docs ( as code )
+* Let someone *review* it -> cross-reviews before merging -> merge request
+* Run automated *tests* -> checkstyle, syntax etc.
+* *Merge* stuff to (git) branch
+* Run one or multiple *builds* for different formats
+* And finally *deploy* the documents, e.g. to a html page, Confluence
+
+
+== What tools can be used?
+We want a simple code structure, choose a designated language for your project, e.g. AsciiDoc
+
+Editing tools:
+
+* Simple text editor like vim, notepad++, ...
+WYSIWYG-tools
+* rich text editor like Atom
+* *IDEs*  `!!! Jippie !!!`
+** IntelliJ (see `demo`)
+** Visual Studio Code
+** (Eclipse)
+
+== Text document formats
+designated languages
+
+* Markdown .md (git)
+* AsciiDoc .adoc (see `demo`)
+* ...
+
+=== And diagrams?
+Diagrams can also be coded but that's is not that easy
+Tools like _plantUML_ generate good sequential diagrams
+but not for  "beautiful" graphics
+
+Recommendation
+s create diagrams, graphs, images somewhere else and reference to the files
+-> stay up-to-date
+
+=== What is AsciiDoc(tor)?
+
+[quote, Stuart Rackham]
+You write an AsciiDoc document the same way you would write a normal text document.
+There are no markup tags or weird format notations.
+AsciiDoc files are designed to be viewed, edited and printed directly or translated to other presentation formats.
+
+
+== Examples
+
+* Editing tools:
+** Notepad++
+** IntelliJ
+* Docs:
+** Code in Asciidoc format
+** Generated documents
+*** html
+*** PDF
+
+(comment this out)
+* CI/CD Pipeline:
+** Version control systems
+*** gitLab (GFT)
+** Build server:
+*** Jenkins
+** Generator
+*** Asciidoctor
+
+
