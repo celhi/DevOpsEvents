@@ -1,9 +1,9 @@
-= DevOps Event 24.01.2019
+= DevOps Event
 
 Thursday, January 24th, 16.00 – 18.00,
 Room 6.02-6.04, Eschborn.
 
-== Agenda:
+== Agenda
 
 === 16:00 – 16:05: Welcome Gathering
 
