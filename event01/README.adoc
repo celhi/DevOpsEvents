@@ -1,7 +1,25 @@
-:source-highlighter: coderay
 = DevOps Event 24.01.2019
 
-* `TODO`
-Add Agenda
-and description
+Thursday, January 24th, 16.00 – 18.00,
+Room 6.02-6.04, Eschborn.
+
+== Agenda:
+
+=== 16:00 – 16:05: Welcome Gathering
+
+=== 16:05 – 16:50: bash (Konstantin Zverev, Thomas Brunko)
+You're holding it wrong: using your shell effectively - the don’ts on the other hand.
+
+=== 16:50 – 17:00: Break
+
+=== 17:00 – 17:25: Jenkins and test automation (Silke Wölbing)
+I would like to explain my experience over the last years with Jenkins and especially test automation.
+
+=== 17:30 – 17:55: Doc as Code (Christine Lenhart)
+I would like to give an overview how to use the Doc as Code principle in praxis.
+
+=== 18:00:  Bye.
+
+
+
 
