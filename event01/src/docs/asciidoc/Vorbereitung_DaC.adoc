@@ -1,7 +1,7 @@
 = Docs as Code 
 An Overview
 Christine Lenhart <Christine.Lenhart@gft.com>
-:toc: left
+:toc:
 
 
 == Was möchte ich eigentlich erklären?
@@ -36,8 +36,26 @@ D.h. man kann seinen Text so aufbauen, dass pro Zeile genau ein Satz steht (oder
 (Einige empfehlen, den Ansatz von 1 Satz pro Zeile, zur Verbesserung der Lesbarkeit bei E-Mails zu nutzen.)
 
 
+* Have you ever been annoyed by having to switch tools when you want to document your code?
+* Did you ever wish to update all the diagrams in your documentation easily?
+* Did you ever wish to have an easy review process for your documents?
+* Would you like to have your code and documentation in sync?
 
+If you can answer one or more of these questions with "yes",
+then the docs-as-code approach is for you!
+(See https://docs-as-co.de/)
 
+Docs as code means applying software development processes and tools to technical documentation.
+We write our content in a plain text format using a text editor rather than a markup language like XML and a content management system.
+We publish with a static site generator rather than an expensive or bespoke publishing system.
+https://gdstechnology.blog.gov.uk/2017/08/25/why-we-use-a-docs-as-code-approach-for-technical-documentation/
+
+AsciiDoc is a text document format, similar to formats like Markdown, for writing notes, documentation, articles,
+books, ebooks, slideshows, web pages, man pages and blogs. AsciiDoc files can be translated to many formats
+including HTML, PDF, EPUB, man page. AsciiDoc is, in contrast to Markdown, highly configurable: both the AsciiDoc
+source file syntax and the backend output markups (which can be almost any type of SGML/XML markup)
+can be customized and extended by the user.
+https://plugins.jetbrains.com/plugin/7391-asciidoc
 
 === Vorteile
 Das Interessante dabei ist auch, dass sich Dokumente und Bilder/Diagramme kreuzverweisen lassen. So bleiben diese in Dokumenten Up-to-date.

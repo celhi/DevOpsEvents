@@ -1,8 +1,7 @@
-= Docs as Code
+= Docs as Code -- An Overview
+:toc:
 
-An Overview
-
-image::logo.png[]
+image::images/logo.jpg[]
 
 Christine Lenhart <Christine.Lenhart@gft.com>
 
@@ -11,9 +10,9 @@ DevOps Event 24.01.2019
 
 == What is Docs as Code and what does it have to do with DevOps?
 
-Anne Gentle gives a nice answer to that:
 
-Docs like code := 
+[quote, Anne Gentle]
+*Docs like Code* =
 write,  
 review,  
 test, 
@@ -24,7 +23,7 @@ repeat.
 
 
 === Sounds familiar?
-image::DaC_small.png[]
+image::images/DaC_small.png[]
 Right, just like the concept of DevOps and CI/CD
 
 * You *write* code eh docs ( as code )
@@ -65,7 +64,7 @@ Common designated language are
 
 * Markdown .md (git)
 * AsciiDoc .adoc (dpa)
-* . (Google)
+* (Google)
 * ...
 
 You can also define your own language but why not make use of the simplicity of the good documented ones?!
@@ -80,20 +79,18 @@ AsciiDoc files are designed to be viewed, edited and printed directly or transla
 Asciidoctor is ruby based processing tool for files to html, docbook, pdf, ...
 
 
-== What tools can be used?
-
-=== Editing tools
+=== What editing tools can be used?
 
 * Plain text editors
 ** notepad++
 ** vim
-...
+** ...
 
-* *IDEs*  `!!! Jippie !!!`
+* IDEs (_!!! Jippie !!!_)
 ** IntelliJ (see `demo`)
 ** Visual Studio Code
 ** (Eclipse)
-...
+** ...
 
 
 == And what's with diagrams?
@@ -117,7 +114,6 @@ And don't forget to put the images in the repositories so that the docs always s
 
 * Editing tools:
 
-** Notepad++
 ** IntelliJ
 
 * Docs:
