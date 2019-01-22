@@ -10,6 +10,14 @@ DevOps Event 24.01.2019
 
 == What is Docs as Code and what does it have to do with DevOps?
 
+* Focus on the content
+* Easy to write without context switches
+* Leave formatting to someone else
+* Keep code and documentation in sync
+* Provide documents in various formats audience oriented
+** Manager might prefer PDF files
+** Developer rather web or Confluence pages
+* And most important generate documents automatically!
 
 [quote, Anne Gentle]
 *Docs like Code* =
@@ -45,11 +53,12 @@ Documents with old screenshots get updated automatically up-to-date
 
 === What do you need?
 
-* CI/CD Pipeline:
+* Continuous integration / Continuous deployment (CI/CD) Pipeline:
+
 ** Version control systems
 *** gitLab (GFT)
 ** Build server:
-*** Jenkins
+*** Jenkins (GFT)
 ** Generator
 *** Asciidoctor (see `demo`)
 
@@ -63,9 +72,8 @@ that are used in git, google, wikis etc.
 Common designated language are
 
 * Markdown .md (git)
-* AsciiDoc .adoc (dpa)
-* (Google)
-* ...
+* AsciiDoc .adoc (Redhat opensource projects)
+
 
 You can also define your own language but why not make use of the simplicity of the good documented ones?!
 
@@ -92,6 +100,7 @@ Asciidoctor is ruby based processing tool for files to html, docbook, pdf, ...
 ** (Eclipse)
 ** ...
 
+image:images/IDE_IntelliJ_light.png[]
 
 == And what's with diagrams?
 Diagrams can also be coded 

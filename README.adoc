@@ -1,5 +1,10 @@
 :source-highlighter: coderay
 = DevOps Events
 
-* `TODO`
+****
+Here you find a collection of DevOps Event materials.
 
+Upcoming event is event01:
+****
+
+include::event01/README.adoc[]
