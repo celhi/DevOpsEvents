@@ -15,7 +15,7 @@ You're holding it wrong: using your shell effectively - the don’ts on the othe
 === 17:00 – 17:25: Jenkins and test automation (Silke Wölbing)
 I would like to explain my experience over the last years with Jenkins and especially test automation.
 
-=== 17:30 – 17:55: Doc as Code (Christine Lenhart)
+=== 17:30 – 17:55: Docs as Code (Christine Lenhart)
 I would like to give an overview how to use the Docs as Code principle in praxis.
 
 === 18:00:  Bye.

@@ -56,7 +56,7 @@ Documents with old screenshots get updated automatically up-to-date
 * Continuous integration / Continuous deployment (CI/CD) Pipeline:
 
 ** Version control systems
-*** gitLab (GFT)
+*** GitLab (GFT)
 ** Build server:
 *** Jenkins (GFT)
 ** Generator

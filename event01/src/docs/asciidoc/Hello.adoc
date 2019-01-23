@@ -1,0 +1,80 @@
+= DevOps Community Event
+//TODO: add a table of content
+//:toc:
+
+//TODO: write an abstract
+GFT's first DevOps Community Event!
+
+// TODO: include the GFT Logo
+//image::images/logo.jpg[]
+//Author: Christine.Lenhart@gft.com
+
+
+== Live Demo
+
+//TODO: Write a paragraph
+//*Hello* and _welcome_ to our first
+//`DevOps Community Event`
+
+
+////
+In this `demo`
+you learn how to write a *simple document*.
+Sentences can be spread
+cover several lines.
+A good _pratice_ is to write one sentence at a line.
+This helps to see changes in document versions.
+////
+
+
+
+////
+Now let's have a look at some nice features.
+(This is a new paragraph by the way.)
+Unfortunately, syntax highlighting is not supported in the preview. :(
+////
+
+
+
+=== Today's presenters are... (ordered list by talks)
+
+//TODO: write list of presenters
+////
+1. Sebastian
+2. Konstantin
+ * Thomas
+3. Silke
+4. Christine
+////
+
+
+=== Include the Agenda from README.adoc
+//TODO: include Agenda from file
+
+////
+:sourcedir-src: ../../..
+include::{sourcedir-src}/README.adoc[leveloffset=+1]
+---
+////
+
+
+=== Include code snippet from App.java
+//TODO: include code snippet
+
+////
+:sourcedir-java: {sourcedir-src}/src/main/java
+[source,java]
+----
+include::{sourcedir-java}/App.java[lines=7..10]
+----
+////
+
+
+=== Include image from URL
+//TODO: Include external image
+
+//image::https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqQVtHpe7nD5lUZE477foSEd8zxheLJDvCCfSrR1XTD6UzrKVidQ[]
+//-- Christine
+
+
+=== Thanks for listening
