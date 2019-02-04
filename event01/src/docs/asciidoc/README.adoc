@@ -1,0 +1,86 @@
+= How to use the demo?
+
+== Getting started
+
+=== Installation
+
+* https://asciidoctor.org/[asciidoctor]
+* https://asciidoctor.org/docs/asciidoctor-pdf/[asciidoctor-pdf]
+
+.*Recommendation:*
+[subs=+macros]
+----
+ Install "IntelliJ" with https://plugins.jetbrains.com/plugin/7391-asciidoc[Asciidoc Plugin].
+----
+
+
+=== Start Demo
+
+`DevOpsEvents/event01` structure is like a maven project.
+So if you use an IDE like IntelliJ
+you can import DevOpsEvents/event01 as a project.
+
+
+==== Let's begin
+
+"Hello.adoc" contains TODO's with examples.
+
+* Open "Hello.adoc" an editor of your choice.
+* Follow the _TODO_ instructions in the comments.
+* Generate a file after every _TODO_ to see the outcome.
+Start with html which is the default but you can also choose form the formats
+by adding the argument `-b, --backend BACKEND <format>`.
+** html5,
+** xhtml5,
+** docbook5,
+** docbook45,
+** manpage
+* Right click on the generated html file on the project view and
+  choose a browser you want to see the file with, e.g. Firefox.
+
+_Note_ that additional backends for pdf or latex etc. are supported via extensions only!
+
+
+.Example for html
+* Open a terminal (For IntelliJ see instruction below.)
+* Run the command
+```
+asciidoctor <path to your project>/Hello.adoc
+```
+
+_Note_ that the style of the document varies from file format to file format.
+Other than the mentioned formats have
+
+.Example for docbook
+```
+asciidoctor -b docbook <path to your project>/Hello.adoc
+```
+
+==== Generate PDF files
+
+* Open a terminal.
+* Use the previously installed plugin
+https://asciidoctor.org/docs/asciidoctor-pdf/[asciidoctor-pdf]
+ to generate pdf files.
+```
+asciidoctor-pdf <path to your project>/Hello.adoc
+```
+
+== Instruction for IntelliJ
+IntelliJ provides a terminal.
+Thus, you don't have so switch to another tool.
+When using standard settings
+the Terminal can be found at the bottom.
+
+* Click on "Terminal"
+* Type in `bash`.
+* Go to the project directory `<path to your project>/Hello.adoc`
+* run
+```
+asciidoctor-pdf Hello.adoc
+```
+
+Unfortunately, some makros cannot be rendered in IntelliJ *preview*.
+
+_Note:_
+The preview does not show the TODO's in the Hello.adoc in the AsciiDoc file.

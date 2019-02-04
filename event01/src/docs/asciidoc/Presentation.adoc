@@ -24,7 +24,7 @@ DevOps Event 24.01.2019
 write,  
 review,  
 test, 
-merge, 
+merge,
 build, 
 deploy, 
 repeat.
@@ -49,7 +49,7 @@ No Problem.
 Add references to other files, images.
  
 When new doc is committed an automated build gets triggered 
-Documents with old screenshots get updated automatically up-to-date
+Documents with old screenshots get updated automatically
 
 === What do you need?
 
@@ -107,12 +107,17 @@ Diagrams can also be coded
 *but*
 that's is not that easy
 
+*asciidoctor-diagram*
+is an extension for diagrams
+which supports several formats
+
 Tools like _plantUML_ generate good sequential diagrams
 but it is hard to code "beautiful" graphs
 
+//image::images/asciidoc-diagram-code.png[]
+//image::images/generated-diagram.png[]
 
-Recommendation: 
-
+Recommendation:
 create diagrams, graphs, images with graphic editing tools and *reference* in your code to the images
 
 ```
@@ -121,18 +126,32 @@ And don't forget to put the images in the repositories so that the docs always s
 
 == Demo
 
-* Editing tools:
+* Editing tools: IntelliJ
 
-** IntelliJ
+* Code in Asciidoc format
 
-* Docs:
-
-** Code in Asciidoc format
-
-** Generate document
-
-** html
+* Generate documents in html and PDF format with asciidoctor
 
 (Push changes to repo)
+
+== Sources and further readings
+
+Talk inspired by Dr. Ralf Müller https://doctoolchain.github.io/docToolchain/
+
+=== Articles and Books
+* https://www.docslikecode.com/book/
+* https://jaxenter.de/docs-as-code-asciidoctor-62432
+* https://jaxenter.de/architekturdokumentation-mit-entwicklerwerkzeugen-25302
+* https://idratherbewriting.com/2017/06/02/when-docs-are-not-like-code/
+* https://gdstechnology.blog.gov.uk/2017/08/25/why-we-use-a-docs-as-code-approach-for-technical-documentation/
+* http://hackwrite.com/posts/docs-as-code/
+
+=== Manuals and templates
+* https://asciidoctor.org/docs/asciidoc-article/[]
+* https://help.paligo.net/en/cheat-sheet-for-asciidoc-markdown.html[]
+* https://docs.antora.org/antora/2.0/asciidoc/include-example/[]
+* https://asciidoctor.org/docs/asciidoctor-pdf/[]
+* https://www.rubydoc.info/gems/asciidoctor-diagram/[]
+
 
 
