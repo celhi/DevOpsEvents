@@ -2,9 +2,11 @@
 = DevOps Events
 
 ****
-Here you find a collection of DevOps Event materials.
+Here you find a collection of event materials.
 
 Upcoming events:
-****
+TBA
+
+== Past events
 
 include::event01/README.adoc[]
