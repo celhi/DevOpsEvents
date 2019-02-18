@@ -1,4 +1,3 @@
-//:source-highlighter: coderay
 = DevOps Events
 
 ****
@@ -7,6 +6,6 @@ Here you find a collection of event materials.
 Upcoming events:
 TBA
 
-== Past events
+*Past events*
 
 include::event01/README.adoc[]
