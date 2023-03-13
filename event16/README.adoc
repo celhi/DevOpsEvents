@@ -1,0 +1,24 @@
+= DevOps Event #16
+
+The 16th DevOps Community Event is about to take place on:
+
+Thursday, Mar 16th, 16:30h – 18:15h
+Online in MS Teams
+
+== Agenda
+
+=== 16:30 – 16:50    Welcome (Name)
+Who are we, what do we do, where to find us.
+  
+=== 16:50 – 17:10    DevOps Snapshots
+Short reports from our daily DevOps work. From Silke, Soumya and Sebastian:
+-	Git-fun by migrating from Subversion
+-	Trumpf Oseon Maintenance
+Target Audience: Everyone
+
+=== 17:15 – 17:50    Containerized IDEs (Christine Lenhart) 
+This presentation will show ways to achieve a more efficient and reliable software development workflow. The key is to deploy IDEs as fully prepared containers in the cloud. This enables the onboarding of new developers within a few hours.
+Target Audience: Everyone, lightly technical.
+
+=== 17:50                 Open discussion
+=== 18:15                 Bye !
